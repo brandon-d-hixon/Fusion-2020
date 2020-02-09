@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>title</title>
+	<title>GracePoint Fusion</title>
 	<meta name="author" content="name">
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords,here">
@@ -15,13 +15,46 @@
 			margin: 0;
 			padding: 0;
 		}
-
+		@media screen and (max-width: 1200px){
+			.center{float: none!important;}
+		}
 		@media screen and (max-width: 480px) {
-			.mobile-font{
-				font-size: 20px!important;
+			.mobile-font {
+				font-size: 20px !important;
 			}
+			.drop {display: table-row!important;}
 		}
 	</style>
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Feb 21, 2020 20:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Display the result in the element with id="demo"
+			document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+				minutes + "m " + seconds + "s ";
+
+			// If the count down is finished, write some text
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
 </head>
 
 <body style="background-color: #f6f6f6;">
@@ -31,7 +64,7 @@
 				<!-- Header -->
 				<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
 					<tr>
-						<td align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #3b4a69 url('images/madeleine-ragsdale-K3xpFbcLuGs-unsplash.jpg'); background-size: cover; background-position: bottom; padding: 50px 15px;">
+						<td align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #3b4a69 url('images/madeleine-ragsdale-K3xpFbcLuGs-unsplash.jpg'); background-size: cover; background-position: bottom; padding: 50px 15px 0px 15px;">
 							<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
 								<tr>
 									<td align="center" valign="top" style="padding: 0px 0 0px 0;">
@@ -40,11 +73,11 @@
 								</tr>
 								<tr>
 									<td align="center" valign="top" style="padding: 0px; font-family: Open Sans, Helvetica, Arial, sans-serif;">
-										<h1 style="font-size: 40px; color: #ffffff;">GracePoint Fusion</h1>
+										<h1 style="font-size: 40px; color: #ffffff;">Fusion Conference 2020</h1>
 									</td>
 								</tr>
 								<tr>
-									<td align="center" valign="top" style="padding: 0 0 35px 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
+									<td align="center" valign="top" style="padding: 0 0 0px 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
 										<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%" style="max-width: 200px;">
 											<tr>
 												<td align="center" bgcolor="red" style="color: #ffffff; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px; border-radius: 3px 3px 0 0;">
@@ -53,18 +86,15 @@
 											</tr>
 											<tr>
 												<td align="center" bgcolor="#ffffff" style="color: #444444; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 48px; padding: 15px; border-radius: 0 0 3px 3px;">
-													22
+													21-23
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 0;">
-										<p class="mobile-font" style="color: #ffffff; font-size: 16px; line-height: 24px; margin: 0;">
-											Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
-										</p>
-
+									<td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding: 0 0 0 0;">
+										<p id="countdown" style="color: #ffffff; font-size: 40px;"></p>
 									</td>
 								</tr>
 							</table>
@@ -72,33 +102,42 @@
 					</tr>
 				</table>
 				<!-- /Header -->
-				<!-- Article -->
-				<table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;" role="presentation">
+				<table cellspacing="0" cellpadding="0" border="0" role="presentation">
 					<tr>
-						<td align="center" style="padding: 20px;">
-							<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<td id="Articles">
+							<!-- Article -->
+							<table class="center" cellspacing="0" cellpadding="0" align="center" border="0" width="100%" style="max-width: 600px; float: left;" role="presentation" >
 								<tr>
-									<td align="center" bgcolor="#f6f6f6" style="border-radius: 3px 3px 0 0; padding-top: 30px;">
-										<img src="https://picsum.photos/600/200" width="100%" height="200" alt="insert alt text here" style="display: block; border-radius: 3px 3px 0 0; font-family: sans-serif; font-size: 16px; color: #999999;" />
-									</td>
-								</tr>
-								<tr>
-									<td align="center" bgcolor="#ffffff" style="border-radius: 0 0 3px 3px; padding: 25px;">
+									<td align="center" style="padding: 20px;">
 										<table cellspacing="0" cellpadding="0" border="0" width="100%">
 											<tr>
-												<td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif;">
-													<h2 class="mobile-font" style="font-size: 20px; color: #444444; margin: 0; padding-bottom: 10px;"> Article #1</h2>
-													<p class="mobile-font" style="color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
-														Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
-													</p>
+												<td align="center" bgcolor="#f6f6f6" style="border-radius: 3px 3px 0 0; padding-top: 30px;">
+													<img src="images/BE805D56-A403-44CF-B0D3-EE7CF7F5E8D6-5465-00000266B8791D2C.jpg" width="100%" height="200" alt="insert alt text here" style="display: block; border-radius: 3px 3px 0 0; font-family: sans-serif; font-size: 16px; color: #999999;" />
 												</td>
 											</tr>
 											<tr>
-												<td align="center" style="padding: 30px 0 0 0;">
-													<table border="0" cellspacing="0" cellpadding="0">
+												<td align="center" bgcolor="#ffffff" style="border-radius: 0 0 3px 3px; padding: 25px 25px 11px 25px;">
+													<table cellspacing="0" cellpadding="0" border="0" width="100%">
 														<tr>
-															<td align="center" style="border-radius: 26px;" bgcolor="#75b6c9">
-																<a href="http://litmus.com" target="_blank" style="font-size: 16px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read more &rarr;</a>
+															<td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif;">
+																<h2 class="mobile-font" style="font-size: 20px; color: #444444; margin: 0; padding-bottom: 10px;"> Fusion Conference Schedule </h2>
+																<p class="mobile-font" style="color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
+																	Schedule subject to change
+																</p>
+																<ul style="list-style: none; padding: 0 0 0 0;">
+																	<li>
+																		12:00pm - Jason Kindrex
+																	</li>
+																	<li>
+																		1:00pm - Jason White
+																	</li>
+																	<li>
+																		2:00pm - Someone Else
+																	</li>
+																	<li>
+																		3:00pm - Someone Else2
+																	</li>
+																</ul>
 															</td>
 														</tr>
 													</table>
@@ -108,37 +147,37 @@
 									</td>
 								</tr>
 							</table>
-						</td>
-					</tr>
-				</table>
-				<!-- /Article -->
-								<!-- Article -->
-				<table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;" role="presentation">
-					<tr>
-						<td align="center" style="padding: 20px;">
-							<table cellspacing="0" cellpadding="0" border="0" width="100%">
+							<!-- /Article -->
+							<!-- Article -->
+							<table class="center" cellspacing="0" cellpadding="0" align="center" border="0" width="100%" style="max-width: 600px; float: right;" role="presentation">
 								<tr>
-									<td align="center" bgcolor="#f6f6f6" style="border-radius: 3px 3px 0 0; padding-top: 30px;">
-										<img src="https://picsum.photos/600/200" width="100%" height="200" alt="insert alt text here" style="display: block; border-radius: 3px 3px 0 0; font-family: sans-serif; font-size: 16px; color: #999999;" />
-									</td>
-								</tr>
-								<tr>
-									<td align="center" bgcolor="#ffffff" style="border-radius: 0 0 3px 3px; padding: 25px;">
+									<td align="center" style="padding: 20px;" >
 										<table cellspacing="0" cellpadding="0" border="0" width="100%">
 											<tr>
-												<td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif;">
-													<h2 class="mobile-font" style="font-size: 20px; color: #444444; margin: 0; padding-bottom: 10px;"> Article #2</h2>
-													<p class="mobile-font" style="color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
-														Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
-													</p>
+												<td align="center" bgcolor="#f6f6f6" style="border-radius: 3px 3px 0 0; padding-top: 30px;">
+													<img src="https://picsum.photos/600/200" width="100%" height="200" alt="insert alt text here" style="display: block; border-radius: 3px 3px 0 0; font-family: sans-serif; font-size: 16px; color: #999999;" />
 												</td>
 											</tr>
 											<tr>
-												<td align="center" style="padding: 30px 0 0 0;">
-													<table border="0" cellspacing="0" cellpadding="0">
+												<td align="center" bgcolor="#ffffff" style="border-radius: 0 0 3px 3px; padding: 25px;">
+													<table cellspacing="0" cellpadding="0" border="0" width="100%">
 														<tr>
-															<td align="center" style="border-radius: 26px;" bgcolor="#75b6c9">
-																<a href="http://litmus.com" target="_blank" style="font-size: 16px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read more &rarr;</a>
+															<td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif;">
+																<h2 class="mobile-font" style="font-size: 20px; color: #444444; margin: 0; padding-bottom: 10px;"> Article #2</h2>
+																<p class="mobile-font" style="color: #999999; font-size: 16px; line-height: 24px; margin: 0;">
+																	Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+																</p>
+															</td>
+														</tr>
+														<tr>
+															<td align="center" style="padding: 30px 0 0 0;">
+																<table border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td align="center" style="border-radius: 26px;" bgcolor="#75b6c9">
+																			<a href="http://litmus.com" target="_blank" style="font-size: 16px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 26px; background-color: #75b6c9; padding: 14px 26px; border: 1px solid #75b6c9; display: block;">Read more &rarr;</a>
+																		</td>
+																	</tr>
+																</table>
 															</td>
 														</tr>
 													</table>
@@ -148,10 +187,10 @@
 									</td>
 								</tr>
 							</table>
+							<!-- /Article -->
 						</td>
 					</tr>
 				</table>
-				<!-- /Article -->
 				<!--Footer-->
 				<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
 					<tr>
@@ -184,7 +223,8 @@
 											<tr>
 												<td align="center" valign="top" style="padding: 0; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #999999;">
 													<p class="mobile-font" style="font-size: 14px; line-height: 20px;">
-														1206 AR-35,<br>
+														Presented By GracePoint Chruch <br>
+														1206 AR-35,
 														Benton, AR 72019
 													</p>
 												</td>
