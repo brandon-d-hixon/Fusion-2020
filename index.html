@@ -10,19 +10,27 @@
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords,here">
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
 	<style type="text/css">
 		body {
 			margin: 0;
 			padding: 0;
 		}
-		@media screen and (max-width: 1200px){
-			.center{float: none!important;}
+
+		@media screen and (max-width: 1250px) {
+			.center {
+				float: none !important;
+			}
 		}
+
 		@media screen and (max-width: 480px) {
 			.mobile-font {
 				font-size: 20px !important;
 			}
-			.drop {display: table-row!important;}
+
+			.drop {
+				display: table-row !important;
+			}
 		}
 	</style>
 	<script>
@@ -44,14 +52,14 @@
 			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			// Display the result in the element with id="demo"
+			// Display the result in the element with id="countdown"
 			document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
 				minutes + "m " + seconds + "s ";
 
 			// If the count down is finished, write some text
 			if (distance < 0) {
 				clearInterval(x);
-				document.getElementById("countdown").innerHTML = "EXPIRED";
+				document.getElementById("countdown").innerHTML = "Fusion has started!";
 			}
 		}, 1000);
 	</script>
@@ -67,12 +75,12 @@
 						<td align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #3b4a69 url('images/madeleine-ragsdale-K3xpFbcLuGs-unsplash.jpg'); background-size: cover; background-position: bottom; padding: 50px 15px 0px 15px;">
 							<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
 								<tr>
-									<td align="center" valign="top" style="padding: 0px 0 0px 0;">
-										<img src="images/DreamTeamShirtGP_White_Orange.png" width="100" border="0" style="display: block;">
+									<td align="center" valign="top" style="padding: 20px 0 0px 0;">
+										<img src="images/GPLogo_03.png" width="100" border="0" style="display: block;">
 									</td>
 								</tr>
 								<tr>
-									<td align="center" valign="top" style="padding: 0px; font-family: Open Sans, Helvetica, Arial, sans-serif;">
+									<td align="center" valign="top" style="padding: 0px; font-family: 'Rock Salt', cursive;">
 										<h1 style="font-size: 40px; color: #ffffff;">Fusion Conference 2020</h1>
 									</td>
 								</tr>
@@ -93,8 +101,8 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding: 0 0 0 0;">
-										<p id="countdown" style="color: #ffffff; font-size: 40px;"></p>
+									<td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding: 0 0 0 0; color: #ffffff; font-size: 40px; margin: 0 0 0 0;">
+										<p id="countdown" style="color: #ffffff; font-size: 40px;padding: 0 0 0 0; margin: 20px 0 40px 0;"></p>
 									</td>
 								</tr>
 							</table>
@@ -102,11 +110,317 @@
 					</tr>
 				</table>
 				<!-- /Header -->
+				<!-- Schedule -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<!-- LOGO -->
+					<tr>
+						<td bgcolor="#424242" align="center">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<tr>
+									<td align="center" valign="top" style="padding: 40px 10px 40px 10px; font-family: 'Rock Salt', cursive; color: #ffffff;">
+										<h1 style="font-size: 46px; font-weight: 400; margin: 0;">Schedule</h1>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- HERO -->
+					<tr>
+						<td bgcolor="#424242" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<tr>
+									<td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 40px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+										<h1 style="font-size: 48px; font-weight: 400; margin: 0;">Friday</h1>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- COPY BLOCK -->
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<!-- COPY -->
+								<tr>
+									<td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; color: #666666; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black;">
+											<tr>
+												<td align="left">6:30 pm</td>
+												<td align="right">Check-In</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">7:00 pm</td>
+												<td align="right">Dinner: Tacos</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">7:30 pm</td>
+												<td align="right">Pre-Service Game-Time</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">8:00 pm</td>
+												<td align="right">Worship Service</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">9:00 pm</td>
+												<td align="right">Hangout</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">10:00 pm</td>
+												<td align="right">Small Groups/Dessert</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">11:00 pm</td>
+												<td align="right">Leave for Host Houses</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">12:00 am</td>
+												<td align="right">In Rooms</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; padding-top: 10px;">
+											<tr>
+												<td align="left">TBA</td>
+												<td align="right">Lights Out</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- COPY CALLOUT -->
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<tr>
+									<td bgcolor="#424242" align="center" valign="top" style="padding: 40px 20px 40px 20px;  color: #ffffff; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+										<h1 style="font-size: 48px; font-weight: 400; margin: 0;">Saturday</h1>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- COPY BLOCK -->
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<!-- COPY -->
+								<tr>
+									<td bgcolor="#424242" align="left" style="padding: 0px 30px 40px 30px; color: #666666; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff;">
+											<tr>
+												<td align="left">8:00 am</td>
+												<td align="right">Wake Up/Breakfast</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">9:30 am</td>
+												<td align="right">Arrive at church / Game-Time</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">10:00 am</td>
+												<td align="right">Worship Service</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">12:00 pm</td>
+												<td align="right">Lunch: Hot Dogs/Hamburgers</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">1:00 pm</td>
+												<td align="right">Service Project</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">2:30 pm</td>
+												<td align="right">Urban Air</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">4:00 pm</td>
+												<td align="right">Free Time</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">5:30 pm</td>
+												<td align="right">Pre-Service Game-Time</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">6:00 pm</td>
+												<td align="right">Worship Service</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">7:30 pm</td>
+												<td align="right">Dinner: Lasagna</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">8:00 pm</td>
+												<td align="right">Team Games</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">9:00 pm</td>
+												<td align="right">Hangout</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">9:30 pm</td>
+												<td align="right">Small Groups/Dessert</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">10:30 pm</td>
+												<td align="right">Leave for Host Houses</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">11:00 pm</td>
+												<td align="right">In Rooms</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid white; color: #ffffff; padding-top: 10px;">
+											<tr>
+												<td align="left">TBA</td>
+												<td align="right">Lights Out</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<tr>
+									<td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 40px 20px;  color: #111111; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+										<h1 style="font-size: 48px; font-weight: 400; margin: 0;">Sunday</h1>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- COPY BLOCK -->
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<!-- COPY -->
+								<tr>
+									<td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; color: #666666; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; color: #111111;">
+											<tr>
+												<td align="left">8:00 am</td>
+												<td align="right">Wake up/pack up/load cars</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; color: #111111; padding-top: 10px;">
+											<tr>
+												<td align="left">9:00 am</td>
+												<td align="right">Prayer Service at Church</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; color: #111111; padding-top: 10px;">
+											<tr>
+												<td align="left">9:30 am</td>
+												<td align="right">Breakfast at Church</td>
+											</tr>
+										</table>
+										<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="border-bottom: 3px solid black; color: #111111; padding-top: 10px;">
+											<tr>
+												<td align="left">10:00 am</td>
+												<td align="right">Worship Service at Church</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- SUPPORT CALLOUT -->
+					<tr>
+						<td bgcolor="#f4f4f4" align="center" style="padding: 30px 10px 30px 10px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+								<!-- HEADLINE -->
+								<tr>
+									<td bgcolor="#FFE0DE" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+										<h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;">Need more help?</h2>
+										<p style="margin: 0;"><a href="http://litmus.com" target="_blank" style="color: #ec6d64;">We&rsquo;re here, ready to talk</a></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- /Schedule -->
+				<!-- About -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #000000 url('images/crowd-1056764_1920.jpg'); background-size: cover; background-attachment: fixed; padding: 50px 15px 50px 15px;" class="mobile-padding">
+							<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+								<tr>
+									<td align="left" valign="top" style="padding: 50px; font-family: Open Sans, Helvetica, Arial, sans-serif; border-radius: 3px; box-shadow: 0 0 5px rgba(0,0,0,.5);" bgcolor="#f6f6f6">
+										<p style="color: #111111; font-size: 16px; line-height: 26px; margin: 0;">
+
+											<strong>Our Vision</strong><br>
+											Fusion Conference is dedicated to teaching, equipping, and empowering students to live out their greatest potential, and to move forward in their relationship with Christ. Our focus is worship, self-growth, and having the best times of our lives. It's an experience you'll never forget!<br><br>
+											
+											<strong>Where it Began</strong><br>
+											Fusion Conference was birthed in the hearts of our youth staff in the Winter of 2018. Our goal was to create an environment for students to know God, bring their friends, grow deeper in their personal relationship with Christ, while equipping them to reach their campuses and friends.<br><br>
+
+											<strong>Students</strong><br>
+											At Fusion Conference students will play loud &amp; crazy games, serve others in services projects, eat tons of delicious food &amp; get to know other students. Our Host Houses will help them build lifelong friendships while giving them that all important sleeping spot. Four services filled with GracePoint’s amazing worship team, small group breakouts led by Youth Leaders, and sermon topics that will help them grow closer to God!<br><br>
+											
+											<strong>Youth Pastors/Leaders</strong><br>
+											Fusion Conference for Student Pastors/Leaders is designed to help students and leaders connect inside their youth ministry, making them stronger and healthier. The goal is for student pastors and students to grow closer together as they grow closer to God. The tools given over this high energy, spirit packed weekend will set a foundation for your students to build on when they return to their church and school campus! <br><br>
+
+											- Fusion Conference 2020
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- /About -->
+				<!-- Articles -->
 				<table cellspacing="0" cellpadding="0" border="0" role="presentation">
 					<tr>
 						<td id="Articles">
 							<!-- Article -->
-							<table class="center" cellspacing="0" cellpadding="0" align="center" border="0" width="100%" style="max-width: 600px; float: left;" role="presentation" >
+							<table class="center" cellspacing="0" cellpadding="0" align="center" border="0" width="100%" style="max-width: 600px; float: left;" role="presentation">
 								<tr>
 									<td align="center" style="padding: 20px;">
 										<table cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -151,7 +465,7 @@
 							<!-- Article -->
 							<table class="center" cellspacing="0" cellpadding="0" align="center" border="0" width="100%" style="max-width: 600px; float: right;" role="presentation">
 								<tr>
-									<td align="center" style="padding: 20px;" >
+									<td align="center" style="padding: 20px;">
 										<table cellspacing="0" cellpadding="0" border="0" width="100%">
 											<tr>
 												<td align="center" bgcolor="#f6f6f6" style="border-radius: 3px 3px 0 0; padding-top: 30px;">
@@ -191,16 +505,50 @@
 						</td>
 					</tr>
 				</table>
+				<!-- /Articles -->
 				<!--Footer-->
-				<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
+				<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="padding-top: 30px;">
+					<!-- SOCIAL : BEGIN -->
+					<tr>
+						<td bgcolor="#424242">
+							<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+								<tr>
+									<td style="padding: 30px 30px; text-align: center;">
+
+										<table align="center" style="text-align: center;">
+											<tr>
+												<td>
+													<img src="images/Glyph-Inverted/PNG/5293%20-%20Facebook.png" width="35" height="35" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+												</td>
+												<td width="10">&nbsp;</td>
+												<td>
+													<img src="images/Glyph-Inverted/PNG/5294%20-%20Twitter%20I.png" width="35" height="35" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+												</td>
+												<td width="10">&nbsp;</td>
+												<td>
+													<img src="images/Glyph-Inverted/PNG/5295%20-%20Youtube%20I.png" width="35" height="35" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+												</td>
+												<td width="10">&nbsp;</td>
+												<td>
+													<img src="images/Glyph-Inverted/PNG/5301%20-%20Instagram.png" width="35" height="35" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+					<!-- SOCIAL : END -->
 					<tr>
 						<td align="center">
 							<table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
 								<tr>
-									<td align="center" height="100%" valign="top" width="100%" bgcolor="#f6f6f6" style="padding: 40px 15px;">
+									<td align="center" height="100%" valign="top" width="100%" bgcolor="#f6f6f6" style="padding: 10px 15px 0px 15px;">
 
 										<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
-											<tr>
+											<!--<tr>
 												<td align="center" valign="top">
 													<table cellspacing="0" cellpadding="0" border="0" width="250">
 														<tr>
@@ -219,11 +567,11 @@
 														</tr>
 													</table>
 												</td>
-											</tr>
+											</tr>-->
 											<tr>
 												<td align="center" valign="top" style="padding: 0; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #999999;">
 													<p class="mobile-font" style="font-size: 14px; line-height: 20px;">
-														Presented By GracePoint Chruch <br>
+														Presented By GracePoint Church and Switch Studios<br>
 														1206 AR-35,
 														Benton, AR 72019
 													</p>
